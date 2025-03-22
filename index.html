@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script type="module" src="register.js" defer></script>
+</head>
+<body>
+    <div class="form-container">
+        <!-- Login Form -->
+        <form id="login-form" class="login-form" method="post">
+            <div class="text">LOGIN</div>
+            <div class="field">
+                <input type="text" id="login-username" placeholder="Username" required>
+            </div>
+            <div class="field">
+                <input type="password" id="login-password" placeholder="Password" required>
+            </div>
+            <button type="submit">LOGIN</button>
+            <div class="link">
+                Not a member? <a href="#" id="signup-link">Signup now</a>
+            </div>
+        </form>
+
+        <!-- Signup Form -->
+        <form id="signup-form" class="signup-form" style="display: none;" method="post">
+            <div class="text">SIGN UP</div>
+            <div class="field">
+                <input type="text" id="signup-username" placeholder="Username" required>
+            </div>
+            <div class="field">
+                <input type="email" id="signup-email" placeholder="Email" required>
+            </div>
+            <div class="field">
+                <input type="password" id="signup-password" placeholder="Password" required>
+            </div>
+            <div class="field">
+                <input type="password" id="signup-confirm-password" placeholder="Confirm Password" required>
+            </div>
+            <button type="submit">REGISTER</button>
+            <div class="link">
+                Already a member? <a href="#" id="login-link">Login now</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
